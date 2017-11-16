@@ -1,0 +1,90 @@
+#container {
+    width: 900px;
+}
+#header img{
+    float: left;
+    width:120px;
+    height:120px;
+
+}
+#header{
+    margin: -10px;
+    padding: 20px:
+    width: 1500px;
+    height: 120px;
+    background-color: #5E9DC8;
+    border-bottom: 8px solid #000000;
+}
+#topnav {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    width: 9em;
+    background-color: #5F6B61;
+    text-align: right;
+    overflow: hidden;
+    margin: 60px;
+    ul.navbar {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 2em;
+        left: 1em;
+        width: 9em }
+     }
+#leftnav {
+    float: left;
+    width: 200px;
+    height: 1500px;
+    background-color: #5F6B61;
+    margin: 0.6em 0 0em -.6em ;
+    padding: 0.3em;
+    border-right: 1em solid black }
+  ul.navbar a {
+    text-decoration: none }
+  a:link {
+    color: #5E9DC8 }
+  a:visited {
+    color: #DCF0F7 }
+  address {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: thin dotted }
+
+
+#body {
+    padding-left: 11em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#0C2C52;
+    background-color: #DCF0F7 }
+  ul.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    width: 9em }
+  h1 {
+    font-family: Helvetica, Geneva, Arial,
+          SunSans-Regular, sans-serif }
+  ul.navbar li {
+    background: white;
+    margin: 0.5em 0;
+    padding: 0.3em;
+    border-right: 1em solid black }
+  ul.navbar a {
+    text-decoration: none }
+  a:link {
+    color: #5E9DC8 }
+  a:visited {
+    color:  #DCF0F7}
+  address {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: thin dotted }
+    #footer 
