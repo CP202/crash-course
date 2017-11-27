@@ -72,7 +72,7 @@
             <span class="nav-link-text">Chapter 8</span>
           </a>
         </li>
-        
+      
       </ul>
       <ul class="navbar-nav sidenav-toggler">
         <li class="nav-item">
@@ -109,43 +109,140 @@
   </nav>
   <div class="content-wrapper">
     <div class="container-fluid">
-    <h1> Class Content</h1>
-   <p style="text-align:center; padding:15px"> Here you will find a collection of class notes, textbook reviews, and other work notes from students of CP202.
-      Each submission is sorted through to find new and valuable content. When new information is gathered, we make additions
-      to the master notes which you will find in each chapter to the left. We recommend that you start with <a href="chapter1.html">Chapter 1</a>
-       to gain a basic understanding of website design before you dive into the other chapters. As you go through the chapter
-      notes, you will notice that some chapters reference others and there will be links leading you to aiding information. It is 
-      completely under your discretion whether or not you follow these links or continue on with the chapter. However, if you are having
-      trouble understanding the content we strongly recommend you follow the aiding links. At the end of each chapter, you will be 
-    directed to <a href="learning-activities.html">learning activities</a> to solidify your knowledge on the chapter content. You will also be given the option of taking
-  <a href="practic-tests.html"> practice tests</a> at the conclusion of each chapter. To better prepare yourself for class exams, we strongly recommend you end each chapter
-with the learning activities and practice tests provided.</p> 
-<hr> 
-<h2 style="padding:0 15px;">Chapter 1</h2>
-<p style="padding:0 15px;">This chapter focuses on the internet, how it began, why it began, and the basic processes involved with it's functioning. </p>
-<h2 style="padding:0 15px;">Chapter 2</h2>
-<p style="padding:0 15px;">This chapter introduces you to HTML coding, including defining tags with a doc type statement, creating headings and paragraphs in your document's body, and creating lists.</p>
-<h2 style="padding:0 15px;">Chapter 3</h2>
-<p style="padding:0 15px;">This chapter introduces you to CSS style sheets and CSS selectors, as well as how to reference a style sheet in an HTML document.</p>
-<h2 style="padding:0 15px;">Chapter 4</h2>
-<p style="padding:0 15px;">This chapter focuses on formatting lines, borders, and other image elements that are useful when separating your web page into distinct section.</p>
-<h2 style="padding:0 15px;">Chapter 5</h2>
-<p style="padding:0 15px;">This chapter focuses on common types of website design, the basic principles of visual design, and best practices of universal web design.</p>
-<h2 style="padding:0 15px;">Chapter 6</h2>
-<p style="padding:0 15px;">This chapter introduces you to the CSS box model, how to configure margins, as well as how to configure navigation in unordered lists.</p>
-<h2 style="padding:0 15px;">Chapter 7</h2>
-<p style="padding:0 15px;">This chapter introduces you to best mobile design practices, how to configure a three-column page layout, and how to configure CSS for printing a web page.</p>
-<h2 style="padding:0 15px;">Chapter 8</h2>
-<p style="padding:0 15px;">This chapter introduces you to creating basic tables within CSS, including table sections and increasing accessibility of tables.</p>
-
-
-
+    <h1> Chapter 3</h1>
+    <h2>CSS – Cascading Style Sheets </h2>
+    <ul>
+    <li>A single cascading style sheet can control the color, typography, and layout of multiple web pages </li>
+    <li>Content is in HTML and styling is in CSS </li>
+    <li>Easier to look after site because it's DRY (Don't Repeat Yourself) </li>
+    <li>Types of Style Sheets – put the style for the body in the <head> sections </li>
+    <li>Inline Styles (overwrites embedded styles because it is specified inline)(used for one element) </li>
+    <li>Colors are written in hexadecimal values where </li>
+    <li>Red = #FF0000 </li>
+    <li>Green = #00FF00 </li>
+    <li>Blue = #0000FF </li>
+    <li>Black = #000000 </li>
+    <li>White = #FFFFFF </li>
+    <li>When choosing colors for text and background, you should use colors that have strong contrast to make the text easier to read – especially for color blind individuals </li>
+    <li>To make font a color  </li>
+    <li>&lt;p style="color:green"&gt </li>
+    <li>Can also change the font appearance </li>
+    <li>Font-size </li>
+    <li>{p style="font-size:em3"} </li>
+    <li><table>
+    <tbody>
+    <tr>
+      <td><b>Text Values</b></td>
+      <td><b>Em Units</b></td>
+      <td><b>Px Units</b></td>
+      <td><b>Pt Units</b></td>
+      <td><b>Percentage</b></td>
+    </tr>
+    <tr>
+    <td>xx-small</td>
+    <td>.5 em</td>
+    <td>8px;</td>
+    <td>6pt</td>
+    <td>50%</td>
+    </tr>
+    <tr>
+    <td>x-small</td>
+    <td>.6 em</td>
+    <td>11px</td>
+    <td>8pt</td>
+    <td>60%</td>
+    </tr>
+    <tr>
+    <td>small</td>
+    <td>.75 em</td>
+    <td>13px</td>
+    <td>10pt</td>
+    <td>75%</td>
+    </tr>
+    <tr>
+    <td>medium</td>
+    <td>1 em</td>
+    <td>16px</td>
+    <td>12pt</td>
+    <td>100%</td>
+    </tr>
+    <tr>
+    <td>large</td>
+    <td>1.15 em</td>
+    <td>18px</td>
+    <td>13.5pt</td>
+    <td>110%</td>
+    </tr>
+    <tr>
+    <td>x-large</td>
+    <td>1.5 em</td>
+    <td>24px</td>
+    <td>18pt</td>
+    <td>150%</td>
+    </tr>
+    <tr>
+    <td>xx-large</td>
+    <td>2 em</td>
+    <td>30px</td>
+    <td>24pt</td>
+    <td>200%</td>
+    </tr>
+    </tbody>
+    </table> </li>
+    </ul>
+      
+    <h2>Font-family </h2>
+    <ul>
+    <li>&lt;h1 Style="font-family:serif"&gt</li>
+    <li>Changes the style of the font </li>
+    <li>Sometimes you will see multiple fonts written down - "font-family:serif, times new roman, veranda" - this is to make sure that if the program doesn’t have the first font, the second option will take over </li>
+    <li>Embedded Styles (styles the whole site - don’t have to keep styling each paragraph) </li>
+    <li>Put right into the HTML file </li>
+    <li>Creates style for all font </li>
+    <li>&lt;style&gt  P{color:blue; background:grey}  &lt;/style&gt </li>
+    <li> There are also external styles and imported styles </li>
+    </ul>
+    
+    <h2> In body{color:blue} </h2>
+    <ul>
+    <li> Body is the selector</li>
+    <li>Color is the declaration property </li>
+    <li> And blue is the declaration value </li>
+    </ul>
+    
+    <h2>CSS Selectors </h2>
+    <ul> 
+    <li>&lt;h id="paragraph2"&gt This is a Heading&lt;/h&gt </li>
+    <li>&lt;p class="bodyclass"&gt Paragraph &lt;/p&gt </li>
+    <li>In the &lt;head&gt style section at the top of page, put #paragraph2 and give it a color </li>
+    <li>In the &lt;head&gt style section at the top of the page, put p.bodyclass{color:turquoise} </li>
+    <li>This formats the color for the fonts for each paragraph in that particular section </li>
+    <li>You can also create a section and have only two p.bodyclass{color:turquoise} in the section and the other one outside of it </li>
+    <li>Section p.bodyclass{color:turquoise} </li>
+    <li>This makes only the paragraphs within the section turquoise while the other paragraphs remain the original color format </li>
+    <li>p.bodyclass span{color:pink} - in the head format at top of html page </li>
+    <li>&lt;span&gt words you want pink within the other bodyclass turquoise&lt;/span&gt </li>
+    <li>To put a style sheet into a html page, you have to set up a CSS style sheet </li>
+    <li>&lt;link rel="stylesheet" href="test1.css"/&gt </li>
+    <li>In purely CSS documents, you dont need and HTML codes </li>
+    <li>All you put is the styles – for example; </li>
+    <li>P{color;red} </li>
+    </ul>
+    
+    <h2>To centre the page </h2>
+    <ul>
+    <li>Body{width:80%;margin-left: auto;margin-right: auto} </li>
+    <li>Don’t need margin-left or margin-right </li>
+    <li>{Margin: 0 auto} </li>
+    <li>0 is the top and bottom, auto is left and right</li>
+    </ul>
+    
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
-          <small></small>Copyright © Your Website 2017</small>
+          <small>Copyright © Your Website 2017</small>
         </div>
       </div>
     </footer>

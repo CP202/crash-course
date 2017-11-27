@@ -109,43 +109,63 @@
   </nav>
   <div class="content-wrapper">
     <div class="container-fluid">
-    <h1> Class Content</h1>
-   <p style="text-align:center; padding:15px"> Here you will find a collection of class notes, textbook reviews, and other work notes from students of CP202.
-      Each submission is sorted through to find new and valuable content. When new information is gathered, we make additions
-      to the master notes which you will find in each chapter to the left. We recommend that you start with <a href="chapter1.html">Chapter 1</a>
-       to gain a basic understanding of website design before you dive into the other chapters. As you go through the chapter
-      notes, you will notice that some chapters reference others and there will be links leading you to aiding information. It is 
-      completely under your discretion whether or not you follow these links or continue on with the chapter. However, if you are having
-      trouble understanding the content we strongly recommend you follow the aiding links. At the end of each chapter, you will be 
-    directed to <a href="learning-activities.html">learning activities</a> to solidify your knowledge on the chapter content. You will also be given the option of taking
-  <a href="practic-tests.html"> practice tests</a> at the conclusion of each chapter. To better prepare yourself for class exams, we strongly recommend you end each chapter
-with the learning activities and practice tests provided.</p> 
-<hr> 
-<h2 style="padding:0 15px;">Chapter 1</h2>
-<p style="padding:0 15px;">This chapter focuses on the internet, how it began, why it began, and the basic processes involved with it's functioning. </p>
-<h2 style="padding:0 15px;">Chapter 2</h2>
-<p style="padding:0 15px;">This chapter introduces you to HTML coding, including defining tags with a doc type statement, creating headings and paragraphs in your document's body, and creating lists.</p>
-<h2 style="padding:0 15px;">Chapter 3</h2>
-<p style="padding:0 15px;">This chapter introduces you to CSS style sheets and CSS selectors, as well as how to reference a style sheet in an HTML document.</p>
-<h2 style="padding:0 15px;">Chapter 4</h2>
-<p style="padding:0 15px;">This chapter focuses on formatting lines, borders, and other image elements that are useful when separating your web page into distinct section.</p>
-<h2 style="padding:0 15px;">Chapter 5</h2>
-<p style="padding:0 15px;">This chapter focuses on common types of website design, the basic principles of visual design, and best practices of universal web design.</p>
-<h2 style="padding:0 15px;">Chapter 6</h2>
-<p style="padding:0 15px;">This chapter introduces you to the CSS box model, how to configure margins, as well as how to configure navigation in unordered lists.</p>
-<h2 style="padding:0 15px;">Chapter 7</h2>
-<p style="padding:0 15px;">This chapter introduces you to best mobile design practices, how to configure a three-column page layout, and how to configure CSS for printing a web page.</p>
-<h2 style="padding:0 15px;">Chapter 8</h2>
-<p style="padding:0 15px;">This chapter introduces you to creating basic tables within CSS, including table sections and increasing accessibility of tables.</p>
-
-
-
+    <h1> Chapter 8</h1>
+    <h2>HTML Table </h2>
+    <ul>
+    <li>Tables are used on web pages to organize tubular info </li>
+    <li>Composed of rows and columns – similar to a spread sheet </li>
+    <li>Configured with table, tr and td elements </li>
+    <p>&lt;table border="1"&gt </p>
+    <p>&lt;caption&gt Bird Sightings&lt;/caption&gt </p>
+    <p>&lt;tr&gt </p>
+    <p>&lt;td&gtName&lt;/td&gt </p>
+    <p>&lt;td&gtDate&lt;/td&gt </p>
+    <p>&lt;/tr&gt </p>
+    <p>&lt;tr&gt </p>
+    <p>&lt;td&gtCardinal&lt;/td&gt </p>
+    <p>&lt;td&gt11/12/1994&lt;/td&gt </p>
+    <p>&lt;/tr&gt </p>
+    <p>&lt;table&gt </p></li>
+    </ul>
+    
+    <h2>HTML table attributes</h2> 
+    <ul>
+    <li>Align – obsolete </li>
+    <li>Bgcolor – obsolete </li>
+    <li>Border </li>
+    <li>Colspan - &lt;td colspan="2"&gt (makes the top row of the table span over the columns) </li>
+    <li>Rowspan - &lt;td rowspan="2"&gt (makes the left column of the table span over the rows) </li>
+    <li>Cellpadding – obsolete </li>
+    <li>Cellspacing – obsolete </li>
+    <li>Summary – obsolete </li>
+    <li>Width – obsolete </li>
+    <li>Use css to configure table characteristics instead of html attributes </li>
+    </ul>
+    
+    <h2>Accessibility and Tables </h2>
+    <ul>
+    <li>Use the table headers elements (&lt;th&gt tags) to indicate column or row headings </li>
+    <li>Use the caption elements to provide a text or title or caption for the table </li>
+    <li>For complex tables, associate the table cell values with their corresponding headers </li>
+    </ul>
+    
+    <h2>CSS Structural Pseudo-classes</h2> 
+    <ul>
+    <li>:first-of-type – applies to the first element of the specified type </li>
+    <li>:first-child – applies to the first child of the element </li>
+    <li>:last-of-type – applies to the last element of the specified type </li>
+    <li>:last-child – applies to the last child of an element </li>
+    <li>:nth-of-type(n) - applies to the nth element of the specified type  </li>
+    <li>Zebra stripe table – Tr:nth-of-type =(even) [background-color: #eaeaea;} </li>
+    <li> Table Elements - &lt;thead&gt, &lt;tbody&gt, &lt;tfoot&gt (when you need to total something) </li>
+    </ul>
+    
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
-          <small></small>Copyright © Your Website 2017</small>
+          <small>Copyright © Your Website 2017</small>
         </div>
       </div>
     </footer>

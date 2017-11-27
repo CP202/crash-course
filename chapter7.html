@@ -109,43 +109,142 @@
   </nav>
   <div class="content-wrapper">
     <div class="container-fluid">
-    <h1> Class Content</h1>
-   <p style="text-align:center; padding:15px"> Here you will find a collection of class notes, textbook reviews, and other work notes from students of CP202.
-      Each submission is sorted through to find new and valuable content. When new information is gathered, we make additions
-      to the master notes which you will find in each chapter to the left. We recommend that you start with <a href="chapter1.html">Chapter 1</a>
-       to gain a basic understanding of website design before you dive into the other chapters. As you go through the chapter
-      notes, you will notice that some chapters reference others and there will be links leading you to aiding information. It is 
-      completely under your discretion whether or not you follow these links or continue on with the chapter. However, if you are having
-      trouble understanding the content we strongly recommend you follow the aiding links. At the end of each chapter, you will be 
-    directed to <a href="learning-activities.html">learning activities</a> to solidify your knowledge on the chapter content. You will also be given the option of taking
-  <a href="practic-tests.html"> practice tests</a> at the conclusion of each chapter. To better prepare yourself for class exams, we strongly recommend you end each chapter
-with the learning activities and practice tests provided.</p> 
-<hr> 
-<h2 style="padding:0 15px;">Chapter 1</h2>
-<p style="padding:0 15px;">This chapter focuses on the internet, how it began, why it began, and the basic processes involved with it's functioning. </p>
-<h2 style="padding:0 15px;">Chapter 2</h2>
-<p style="padding:0 15px;">This chapter introduces you to HTML coding, including defining tags with a doc type statement, creating headings and paragraphs in your document's body, and creating lists.</p>
-<h2 style="padding:0 15px;">Chapter 3</h2>
-<p style="padding:0 15px;">This chapter introduces you to CSS style sheets and CSS selectors, as well as how to reference a style sheet in an HTML document.</p>
-<h2 style="padding:0 15px;">Chapter 4</h2>
-<p style="padding:0 15px;">This chapter focuses on formatting lines, borders, and other image elements that are useful when separating your web page into distinct section.</p>
-<h2 style="padding:0 15px;">Chapter 5</h2>
-<p style="padding:0 15px;">This chapter focuses on common types of website design, the basic principles of visual design, and best practices of universal web design.</p>
-<h2 style="padding:0 15px;">Chapter 6</h2>
-<p style="padding:0 15px;">This chapter introduces you to the CSS box model, how to configure margins, as well as how to configure navigation in unordered lists.</p>
-<h2 style="padding:0 15px;">Chapter 7</h2>
-<p style="padding:0 15px;">This chapter introduces you to best mobile design practices, how to configure a three-column page layout, and how to configure CSS for printing a web page.</p>
-<h2 style="padding:0 15px;">Chapter 8</h2>
-<p style="padding:0 15px;">This chapter introduces you to creating basic tables within CSS, including table sections and increasing accessibility of tables.</p>
-
-
-
+    <h1> Chapter 7</h1>
+    <h2>Fragment identifiers </h2>
+    <ul>
+    <li>A link to part of a web page </li>
+    <li>Also called fragments </li>
+    <li>Has two components </li>
+    <ol><li>The element that identifies the named fragment of a web page – requires the id attribute  &lt;div id="top"&gt …. &lt;/div&gt </li>
+    <li>The anchor tag that links to the named fragment of a web page – uses a href element &lt;a href="#top"&gt Back to Top &lt;/a&gt </li>
+    </ol>
+    <li>Opening a link in a new browser window </li>
+    <li>The target attribute on the anchor element opens a link in a new browser window or a new tab &lt;a href="http://yahoo.com" target="_blank"&gt Yahoo!&lt;/a&gt </li>
+    </ul>
+    
+    <h2>HTML block anchor</h2> 
+    <ul>
+    <li>Configure block display elements within a hyperlink <br>
+    <p>&lt;a href=http://www.w3.org&gt </p>
+    <p>&lt;h1&gt HTML 5 Reference &lt;/h1&gt </p>
+    <p>&lt;p&gt book mark this site for a handy HTML reference &lt;/p&gt &lt;/a&gt </p>
+    <br></li>
+    </ul>
+    
+    <h2>Telephone or text hyperlinks </h2>
+    <ul>
+    <li>Telephone scheme – Many mobile phones will initiate a phone call when the hyperlink is clicked 
+    <p>&lt;a href=tel:888-555-5555&gtCall 888-555-5555&lt;/a&gt </p></li>
+    <li>SMS scheme – Many mobiles will initiate a text when the hyperlink is clicked 
+    <p>&lt;a href="sms:888-555-5555"&gt Text 888-555-5555&lt;/a&gt </p></li>
+    </ul>
+    
+    <h2>Sprite </h2>
+    <ul>
+    <li>An image file that contains multiple small graphics </li>
+    <li>Saves download time  </li>
+    <li>The first image appears at the top and the second image appears 100 pixels down from the top </li>
+    </ul>
+    
+    <h2>Three Column Page Layout </h2>
+    <ul>
+    <li>Has a header across the top with three columns below including: left, right, and center column </li>
+    <li>Left-column navigation – Float: left; width:150px; </li>
+    <li>Right-column navigation – Float: right; width:200px; </li>
+    <li>Center column – Uses the remaining screen available { Margin: 0 210px 0 160px; }</li>
+    <li>Footer – Clears the float  {Clear: both;} </li>
+    </ul>
+    
+    <h2>CSS Print Styling </h2>
+    <ul>
+    <li>Create an external style sheet with the configurations for browser display </li>
+    <li>Then create an external style sheet with the configurations for printing </li>
+    <li>Connect both external style sheets to the web page using two &lt;link&gt elements 
+    <p>&lt;link rel="stylesheet" href="wildflower.css" type="text/css" media="screen"&gt </p>
+    <p>&lt;link rel="stylesheet" href="wildflowers.css" type="text/css" media="print"&gt </p></li>
+    </ul>
+    
+    <h2>Print Styling Best Practices </h2>
+    <ul>
+    <li>Hide non-essential content – #nav {display: none} </li>
+    <li>Configure font size and color for printing – Use pt font sizes, use dark font color </li>
+    <li>Control break pages – .newpage {page-break-before: always} </li>
+    <li>Print URLs for hyperlinks – #sidebar a:after {content: "("attr(href)")";} </li>
+    </ul>
+    
+    <h2>Mobile Web Design Best Practices </h2>
+    <ul>
+    <li>Optimize layout, navigation, graphics, and text for mobile use  </li>
+    <li>Design for one web </li>
+    <ol>
+    <li>Use a single column design </li>
+    <li>Scroll only one way </li>
+    <li>Use heading elements </li>
+    <li>Use lists </li>
+    <li>Avoid using tablets</li> 
+    <li>Provide labels for form controls </li>
+    <li>Avoid using pixel units in style sheets </li>
+    <li>Hide content that is not essential for mobile use </li>
+    <li>Provide minimal navigation near the top of the page </li>
+    <li>Provide consistent navigation </li>
+    <li>Avoid hyperlinks that open files in new windows or pop-up windows </li>
+    <li>Try to balance both the number of hyperlinks on a page and the number of levels needed to access info </li>
+    <li>Avoid displaying images that are wider than the screen width </li>
+    <li>Configure alternate, small optimized background images </li>
+    <li>Some mobile browsers will downsize all images so avoid using images that contain text </li>
+    <li>Avoid the use of large graphic images </li>
+    <li>Specify the size of images </li>
+    <li>Provide alternate text for graphics and other non-text elements  </li>
+    <li>Configure good contrast between text and background colors </li>
+    <li>Use common font typefaces </li>
+    <li>Configure font sizes with em units or percentages </li>
+    <li>Use a short, descriptive page title </li>
+    </ol></ul>
+    
+    <h2>Viewport Meta Tag </h2>
+    <ul>
+    <li>Configures width and initial scale of browser viewport – &lt;meta name="viewport" content="width"device-width, initial-scale=1.0"&gt </li>
+    <li>Media query – Determines the capability of the mobile device such as screen resolution and directs the browser to styles configured specifically for those capabilities </li>
+    <p>&lt;link href="lighthousemobile.css" rel="stylesheet" Media="only all and (max-device-width:480px)"&gt</p></li>
+    <li>Within CSS - media only all and (max-width: 768px){ } </li>
+    </ul>
+    
+    <h2>Flexible images – to make images display on different screens </h2>
+    <ul>
+    <li>Edit HTML – remove height and width attributes </li>
+    <li>CSS – img {max-width: 100%; height: auto; </li>
+    </ul>
+    
+    <h2>Responsive Images </h2>
+    <ul>
+    <li><p>&lt;picture&gt </p>
+    <p>&lt;source media="(min-width: 1200px)" srcset="large.jpg"&gt </p>
+    <p>&lt;source media="(min-width: 800px)" srcset="medium.jpg"&gt </p>
+    <p> &ltsource media="(min-width: 320px)" srcset="small.jpg"&gt </p>
+    <p> &lt;img src="fallback.jpg" alt="waterwheel"&gt </p>
+    <p>&lt;/picture&gt </p>
+    <p>&lt;img src="fallback.jpg" Sizes ="100vw" Srcset="large.jpg 1200w, medium.jpg 800w, small.jpg 320w" Alt = "waterwheel"&t </p> </li>
+    </ul>
+    
+    <h2>Testing mobile display options</h2> 
+    <ul>
+    <li>Test with a mobile device  </li>
+    <li>Emulators </li>
+    <ol><li>Opera mobile emulator </li>
+    <li>Mobilizer </li>
+    <li>Iphone emulator </li>
+    </ol>
+    <li>Test with a desktop browser </li>
+    <li>Install an iOS or android SDK </li>
+    </ul>
+    
+    
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
-          <small></small>Copyright © Your Website 2017</small>
+          <small>Copyright © Your Website 2017</small>
         </div>
       </div>
     </footer>
