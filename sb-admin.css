@@ -184,9 +184,53 @@ body.sidenav-toggled #mainNav.fixed-top .sidenav-toggler {
   body.sidenav-toggled #mainNav.fixed-top .sidenav-toggler .nav-link {
     width: 55px !important; }
 
+.answers li { 
+      list-style: upper-alpha; 
+      } 
+      
+label { 
+      margin-left: 0.5em; 
+      cursor: pointer; 
+      } 
+      
+#results { 
+      background: #dddada; 
+      color: 000000; 
+      padding: 3px; 
+      text-align: center; 
+      width: 200px; 
+      cursor: pointer; 
+      border: 1px solid gray; 
+      }
+      
+#results:hover { 
+      background: #3d91b8; 
+      color: #ffffff; 
+      padding: 3px; 
+      text-align: center; 
+      width: 200px; 
+      cursor: pointer; 
+      border: 1px solid gray; 
+      } 
+      
+#categorylist { 
+      margin-top: 6px; 
+      display: none; 
+      } 
+      
+#category1, #category2, #category3, #category4, #category5, #category6, #category7, #category8, #category9, #category10, #category11, #category12, #category13, #category14, #category15, #category16, #category17, #category18, #category19, #category20, #category21, #category22, #category23, #category24, #category25, #category26 { 
+      display: none; 
+      }
+      
+#closing {
+      display: none;
+      font-style: italic;
+      }
+
 p{
   color: #0C2C52;
 }
+
 
 h1 {
 color: #0C2C52;
@@ -337,6 +381,7 @@ footer.sticky-footer {
   bottom: 0;
   width: 100%;
   height: 56px;
+  color: white;
   background-color: #212529; 
   line-height: 55px; }
   @media (min-width: 992px) {
