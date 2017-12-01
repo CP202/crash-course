@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>SB Admin - Start Bootstrap Template</title>
+  <title>Flash Cards</title>
   <!-- Bootstrap core CSS-->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
@@ -64,10 +64,62 @@
       </ul>
     </div>
   </nav>
+  <style type="text/css">
+  	.flashcard{
+  		text-align: center;
+  		width: 400px;
+	    border: 1px solid #d3d3d3;
+	    min-height: 110px;
+	    padding: 30px;
+	    height: auto;
+	    background-color: white;
+	    color: black;
+	    border-radius: 5px;
+  	}
+  	.flashcard > span{
+  		display: none;
+  	}
+  </style>
   <div class="content-wrapper">
     <div class="container-fluid">
-                </div>
-        </div>
+    	<h3>Flash Cards</h3>
+    	<br>
+    	<br>
+    	<h5>What is &lt;head&gt;&lt;/head&gt; used for?</h5>
+    	<div class="flashcard">
+    		<span>Indicates the beginning and end of a section of the document used for the title and other document header information.</span>
+    		<button class="btn btn-primary"onclick="$(this).prev().css('display', 'block');$(this).hide();">Click to Reveal</button>
+    	</div>
+    	<br>
+    	<br>
+    	<h5>An element of site design that deals with the location of text or objects to other related items</h5>
+    	<div class="flashcard">
+    		<span>Proximity </span>
+    		<button class="btn btn-primary"onclick="$(this).prev().css('display', 'block');$(this).hide();">Click to Reveal</button>
+    	</div>
+    	<br>
+    	<br>
+    	<h5>The hexadecimal color value for white</h5>
+    	<div class="flashcard">
+    		<span>#FFFFFF</span>
+    		<button class="btn btn-primary"onclick="$(this).prev().css('display', 'block');$(this).hide();">Click to Reveal</button>
+    	</div>
+    	<br>
+    	<br>
+    	<h5>Short for World Wide Web Consortium. It is the international governing body for the development of platform independent web standards and specifications.</h5>
+    	<div class="flashcard">
+    		<span>W3C</span>
+    		<button class="btn btn-primary"onclick="$(this).prev().css('display', 'block');$(this).hide();">Click to Reveal</button>
+    	</div>
+    	<br>
+    	<br>
+    	<h5>True or False: Navigation is only needed on the home page of a website.</h5>
+    	<div class="flashcard">
+    		<span>False</span>
+    		<button class="btn btn-primary"onclick="$(this).prev().css('display', 'block');$(this).hide();">Click to Reveal</button>
+    	</div>
+    	<br>
+    	<br>
     </div>
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
